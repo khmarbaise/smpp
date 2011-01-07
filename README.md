@@ -1,4 +1,4 @@
-SoEBeS Maven Parent POM
+[SoEBeS](http://www.soebes.de) Maven Parent POM
 =======================
 
 This pom defines some defaults which are used within [my](http://www.soebes.com) projects.
