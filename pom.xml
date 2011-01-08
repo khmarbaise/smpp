@@ -65,7 +65,7 @@
         </snapshotRepository>
         <site>
             <id>site.supose.org</id>
-            <url>scp://minden205.server4you.de:/usr/local/vhosts/site.supose.org/sapm/${project.version}/</url>
+            <url>scp://minden205.server4you.de:/usr/local/vhosts/site.supose.org/${project.groupId}/${project.artifactId}/${project.version}/</url>
         </site>
     </distributionManagement>
 
