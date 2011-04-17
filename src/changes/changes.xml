@@ -32,6 +32,19 @@
     </properties>
     <body>
         <release
+            version="Release 0.2.0"
+            date="2011-04-17"
+            description="Enhancement Release">
+            <action
+                type="update"
+                dev="Karl Heinz Marbaise">
+                log4j added, testng dependency updated to 6.0.1 and
+                added some plugins to the pluginManagement section (maven-surefire-plugin
+                updated to 2.8.1; added maven-failsafe-plugin, maven-appassembler-plugin)
+                moved dependencies to dependencyManagement section.
+            </action>
+        </release>
+        <release
             version="Release 0.1.0"
             date="2011-01-08"
             description="First public Release">
