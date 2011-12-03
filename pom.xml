@@ -117,8 +117,8 @@
           <version>2.2.1</version>
         </plugin>
         <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-appassembler-plugin</artifactId>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>appassembler-maven-plugin</artifactId>
           <version>1.1.1</version>
         </plugin>
         <plugin>
