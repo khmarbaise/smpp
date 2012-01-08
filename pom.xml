@@ -145,7 +145,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-changes-plugin</artifactId>
-        <version>2.3</version>
+        <version>2.4</version>
         <configuration>
           <issueLinkTemplatePerSystem>
             <default>https://github.com/khmarbaise/sapm/issues/%ISSUE%</default>
@@ -248,7 +248,7 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-gpg-plugin</artifactId>
-            <version>1.1</version>
+            <version>1.4</version>
             <executions>
               <execution>
                 <id>sign-artifacts</id>
