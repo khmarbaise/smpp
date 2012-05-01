@@ -47,12 +47,17 @@
 
   <properties>
     <!-- Maven Plugins -->
+    <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
     <maven-assembly-plugin.version>2.3</maven-assembly-plugin.version>
     <maven-changes-plugin.version>2.7</maven-changes-plugin.version>
+    <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
     <maven-compiler-plugin.version>2.4</maven-compiler-plugin.version>
+    <maven-dependency-plugin.version>2.4</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.7</maven-deploy-plugin.version>
     <maven-failsafe-plugin.version>2.12</maven-failsafe-plugin.version>
     <maven-gpg-plugin.version>1.4</maven-gpg-plugin.version>
+    <maven-install-plugin.version>2.3.1</maven-install-plugin.version>
+    <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
     <maven-javadoc-plugin.version>2.8.1</maven-javadoc-plugin.version>
     <maven-jxr-plugin.version>2.3</maven-jxr-plugin.version>
     <maven-pmd-plugin.version>2.7.1</maven-pmd-plugin.version>
@@ -60,14 +65,9 @@
     <maven-release-plugin.version>2.2.2</maven-release-plugin.version>
     <maven-resources-plugin.version>2.5</maven-resources-plugin.version>
     <maven-site-plugin.version>3.1</maven-site-plugin.version>
+    <maven-source-plugin.version>2.1.2</maven-source-plugin.version>
     <maven-surefire-plugin.version>2.12</maven-surefire-plugin.version>
     <maven-surefire-report-plugin.version>2.12</maven-surefire-report-plugin.version>
-    <maven-dependency-plugin.version>2.4</maven-dependency-plugin.version>
-    <maven-clean-plugin.version>2.4.1</maven-clean-plugin.version>
-    <maven-install-plugin.version>2.3.1</maven-install-plugin.version>
-    <maven-jar-plugin.version>2.4</maven-jar-plugin.version>
-    <maven-source-plugin.version>2.1.2</maven-source-plugin.version>
-    <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
 
     <!-- Codehaus Plugins -->
     <appassembler-maven-plugin.version>1.2.1</appassembler-maven-plugin.version>
@@ -201,6 +201,12 @@
           <artifactId>maven-pmd-plugin</artifactId>
           <version>${maven-pmd-plugin.version}</version>
         </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-javadoc-plugin</artifactId>
+          <version>${maven-javadoc-plugin.version}</version>
+        </plugin>
+
         <!--  Codehaus Plugins -->
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
