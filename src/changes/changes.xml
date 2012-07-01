@@ -32,6 +32,40 @@
     </properties>
     <body>
         <release
+            version="Release 0.5.0"
+            date="2012-07-01"
+            description="Enhancement Release">
+            <action
+                type="update"
+                dev="Karl Heinz Marbaise">
+                Added fix for forked lifecylce of maven-jar-plugin.
+                Updated changes, clean, compiler plugin.
+                Updated appassembler plugin to 1.2.2 and fixed dependency type for log4j. 
+            </action>
+        </release>
+        <release
+            version="Release 0.4.0"
+            date="2012-05-01"
+            description="Enhancement Release">
+            <action
+                type="update"
+                dev="Karl Heinz Marbaise">
+                Added missing plugin: javadoc.
+            </action>
+        </release>
+        <release
+            version="Release 0.3.0"
+            date="2012-01-18"
+            description="Enhancement Release">
+            <action
+                type="update"
+                dev="Karl Heinz Marbaise">
+                Upgrades maven-surefire, maven-failsafe-plugin. Fixed wrong
+                groupId/artifactId of the appassembler-maven-plugin.
+                Introduced properties for the plugin versions.
+            </action>
+        </release>
+        <release
             version="Release 0.2.0"
             date="2011-04-17"
             description="Enhancement Release">
