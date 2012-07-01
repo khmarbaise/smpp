@@ -14,9 +14,9 @@ The Maven Site for Release xxxx [http://khmarbaise.github.com/smpp](http://khmar
 
 Status
 ------
-- First step
+- Update serveral plugins and dependencies.
 
 TODOs
 -----
-- Cleanup
+- 
 
