@@ -10,7 +10,7 @@ License
 Homepage
 --------
 
-The Maven Site for Release xxxx [http://khmarbaise.github.com/smpp](http://khmarbaise.github.com/smpp)
+The Maven Site for the current release [http://khmarbaise.github.com/smpp/](http://khmarbaise.github.com/smpp/)
 
 Status
 ------
