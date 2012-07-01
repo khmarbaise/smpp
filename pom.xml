@@ -4,7 +4,7 @@
 
   <groupId>com.soebes.smpp</groupId>
   <artifactId>smpp</artifactId>
-  <version>0.5</version>
+  <version>0.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>SoEBeS Maven Parent POM</name>
@@ -85,7 +85,7 @@
     <developerConnection>scm:git:git@github.com:khmarbaise/smpp.git</developerConnection>
     <connection>scm:git:git://github.com/khmarbaise/smpp.git</connection>
     <url>https://github.com/khmarbaise/smpp</url>
-    <tag>smpp-0.5</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <distributionManagement>
