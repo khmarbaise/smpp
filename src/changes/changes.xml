@@ -38,6 +38,11 @@
             <action
                 type="update"
                 dev="Karl Heinz Marbaise">
+                maven-site-plugin (3.2)
+            </action>
+            <action
+                type="update"
+                dev="Karl Heinz Marbaise">
                 Updated maven-dependency-plugin (2.5.1), 
                 maven-failsafe-plugin (2.12.4),
                 maven-install-plugin (2.4),
