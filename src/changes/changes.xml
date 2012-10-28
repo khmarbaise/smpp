@@ -36,6 +36,11 @@
             date="2012-10-XX"
             description="Enhancement Release">
             <action
+                type="add"
+                dev="Karl Heinz Marbaise">
+                maven-war-plugin (2.3)
+            </action>
+            <action
                 type="update"
                 dev="Karl Heinz Marbaise">
                 maven-site-plugin (3.2)
