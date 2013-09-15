@@ -77,7 +77,7 @@
     <maven-surefire-report-plugin.version>2.16</maven-surefire-report-plugin.version>
 
     <!-- Codehaus Plugins -->
-    <appassembler-maven-plugin.version>1.4</appassembler-maven-plugin.version>
+    <appassembler-maven-plugin.version>1.5</appassembler-maven-plugin.version>
     <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
     <jdepend-maven-plugin.version>2.0-beta-2</jdepend-maven-plugin.version>
     <versions-maven-plugin.version>2.1</versions-maven-plugin.version>
