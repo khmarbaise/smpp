@@ -98,6 +98,8 @@
     <license-maven-plugin.version>1.6</license-maven-plugin.version>
     <templating-maven-plugin.version>1.0-alpha-3</templating-maven-plugin.version>
     <versions-maven-plugin.version>2.1</versions-maven-plugin.version>
+    <findbugs-maven-plugin.version>2.5.3</findbugs-maven-plugin.version>
+    <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
 
     <!-- Other Plugins -->
     <antlr3-maven-plugin.version>3.5</antlr3-maven-plugin.version>
