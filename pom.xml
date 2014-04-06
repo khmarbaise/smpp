@@ -89,7 +89,7 @@
     <maven-checkstyle-plugin.version>2.12</maven-checkstyle-plugin.version>
 
     <!-- Codehaus Plugins -->
-    <appassembler-maven-plugin.version>1.7</appassembler-maven-plugin.version>
+    <appassembler-maven-plugin.version>1.8</appassembler-maven-plugin.version>
     <build-helper-maven-plugin.version>1.8</build-helper-maven-plugin.version>
     <buildnumber-maven-plugin.version>1.2</buildnumber-maven-plugin.version>
     <cobertura-maven-plugin.version>2.6</cobertura-maven-plugin.version>
