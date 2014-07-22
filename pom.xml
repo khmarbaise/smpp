@@ -146,6 +146,7 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>${maven-deploy-plugin.version}</version>
           <configuration>
+            <!-- Only realiable if not using -T option of Maven -->
             <deployAtEnd>true</deployAtEnd>
           </configuration>
         </plugin>
@@ -174,6 +175,7 @@
           <artifactId>maven-install-plugin</artifactId>
           <version>${maven-install-plugin.version}</version>
           <configuration>
+            <!-- Only realiable if not using -T option of Maven -->
             <installAtEnd>true</installAtEnd>
           </configuration>
         </plugin>
