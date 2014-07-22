@@ -73,6 +73,7 @@
     <maven-remote-resources-plugin.version>1.5</maven-remote-resources-plugin.version>
     <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
     <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
+    <maven-scm-publish-plugin.verison>1.1</maven-scm-publish-plugin>
 
     <!-- The following things belong together -->
     <maven-site-plugin.version>3.4</maven-site-plugin.version>
@@ -133,8 +134,8 @@
       <url>http://oss.sonatype.org/content/repositories/snapshots</url>
     </snapshotRepository>
     <site>
-      <id>site.supose.org</id>
-      <url>scp://minden205.server4you.de:/usr/local/vhosts/site.supose.org/${project.groupId}/${project.artifactId}/${project.version}/</url>
+      <id>github</id>
+      <url>scm:git:git@github.com:khmarbaise/smpp.git</url>
     </site>
   </distributionManagement>
 
@@ -409,11 +410,13 @@
           <version>${maven-license-plugin.version}</version>
         </plugin>
         <plugin>
-          <groupId>com.github.github</groupId>
-          <artifactId>site-maven-plugin</artifactId>
-          <version>${site-maven-plugin.version}</version>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-scm-publish-plugin</artifactId>
+          <version>${maven-scm-publish-plugin.version}</version>
+          <configuration>
+            <scmBranch>gh-pages</scmBranch>
+          </configuration>
         </plugin>
-
       </plugins>
     </pluginManagement>
     <plugins>
@@ -692,30 +695,6 @@
           </plugin>
         </plugins>
       </build>
-    </profile>
-    <profile>
-      <id>github</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>com.github.github</groupId>
-            <artifactId>site-maven-plugin</artifactId>
-            <configuration>
-              <message>Creating site for ${project.version}</message>
-              <server>github</server>
-            </configuration>
-            <executions>
-              <execution>
-                <goals>
-                  <goal>site</goal>
-                </goals>
-                <phase>post-site</phase>
-              </execution>
-            </executions>
-          </plugin>
-        </plugins>
-      </build>
-
     </profile>
   </profiles>
 </project>
