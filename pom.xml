@@ -73,7 +73,7 @@
     <maven-remote-resources-plugin.version>1.5</maven-remote-resources-plugin.version>
     <maven-resources-plugin.version>2.6</maven-resources-plugin.version>
     <maven-shade-plugin.version>2.3</maven-shade-plugin.version>
-    <maven-scm-publish-plugin.verison>1.1</maven-scm-publish-plugin>
+    <maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
 
     <!-- The following things belong together -->
     <maven-site-plugin.version>3.4</maven-site-plugin.version>
