@@ -60,7 +60,7 @@
     <maven-dependency-plugin.version>2.8</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.8.1</maven-deploy-plugin.version>
     <maven-ear-plugin.version>2.9.1</maven-ear-plugin.version>
-    <maven-ejb-plugin.version>2.3</maven-ejb-plugin.version>
+    <maven-ejb-plugin.version>2.4</maven-ejb-plugin.version>
     <maven-gpg-plugin.version>1.5</maven-gpg-plugin.version>
     <maven-install-plugin.version>2.5.1</maven-install-plugin.version>
     <maven-invoker-plugin.version>1.9</maven-invoker-plugin.version>
