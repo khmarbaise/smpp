@@ -71,7 +71,7 @@
     <maven-jxr-plugin.version>2.4</maven-jxr-plugin.version>
     <maven-pmd-plugin.version>3.1</maven-pmd-plugin.version>
     <maven-project-info-reports-plugin.version>2.7</maven-project-info-reports-plugin.version>
-    <maven-release-plugin.version>2.5</maven-release-plugin.version>
+    <maven-release-plugin.version>2.5.1</maven-release-plugin.version>
     <maven-remote-resources-plugin.version>1.5</maven-remote-resources-plugin.version>
     <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
     <maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
@@ -101,10 +101,6 @@
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <templating-maven-plugin.version>1.0-alpha-3</templating-maven-plugin.version>
     <versions-maven-plugin.version>2.1</versions-maven-plugin.version>
-
-    <!-- Other Plugins -->
-    <antlr3-maven-plugin.version>3.5</antlr3-maven-plugin.version>
-    <site-maven-plugin.version>0.9</site-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
     <maven.version>3.1.1</maven.version>
@@ -401,11 +397,6 @@
           <version>${exec-maven-plugin.version}</version>
         </plugin>
         <!-- Other Plugins -->
-        <plugin>
-          <groupId>org.antlr</groupId>
-          <artifactId>antlr3-maven-plugin</artifactId>
-          <version>${antlr3-maven-plugin.version}</version>
-        </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-scm-publish-plugin</artifactId>
