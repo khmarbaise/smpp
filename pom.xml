@@ -47,7 +47,7 @@
   <!-- Must be overwritten in every project. -->
   <issueManagement>
     <system>default</system>
-    <url>https://github.com/khmarbaise/sapm/issues</url>
+    <url>https://github.com/khmarbaise/smpp/issues</url>
   </issueManagement>
 
   <properties>
