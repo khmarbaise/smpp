@@ -53,7 +53,7 @@
   <properties>
     <!-- Maven Plugins -->
     <maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
-    <maven-assembly-plugin.version>2.5.2</maven-assembly-plugin.version>
+    <maven-assembly-plugin.version>2.5.3</maven-assembly-plugin.version>
     <maven-changes-plugin.version>2.10</maven-changes-plugin.version>
     <maven-checkstyle-plugin.version>2.13</maven-checkstyle-plugin.version>
     <maven-clean-plugin.version>2.6.1</maven-clean-plugin.version>
