@@ -143,6 +143,7 @@
           <version>${maven-deploy-plugin.version}</version>
           <configuration>
             <deployAtEnd>true</deployAtEnd>
+            <updateReleaseInfo>true</updateReleaseInfo>
           </configuration>
         </plugin>
         <plugin>
