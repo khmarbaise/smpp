@@ -638,6 +638,15 @@
         <artifactId>jcommander</artifactId>
         <version>1.35</version>
       </dependency>
+
+      <!--
+        ! Replacement for fest-assert*
+      -->
+      <dependency>
+        <groupId>org.assertj</groupId>
+        <artifactId>assertj-core</artifactId>
+        <version>2.0.0</version>
+      </dependency>
     </dependencies>
   </dependencyManagement>
 
