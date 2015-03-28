@@ -109,7 +109,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- target/source of the java code. -->
-    <compileVersion>1.6</compileVersion>
+    <compileVersion>1.7</compileVersion>
   </properties>
 
   <scm>
