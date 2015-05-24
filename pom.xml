@@ -90,7 +90,7 @@
 
 
     <!-- Codehaus Plugins -->
-    <appassembler-maven-plugin.version>1.9</appassembler-maven-plugin.version>
+    <appassembler-maven-plugin.version>1.10</appassembler-maven-plugin.version>
     <build-helper-maven-plugin.version>1.9.1</build-helper-maven-plugin.version>
     <buildnumber-maven-plugin.version>1.3</buildnumber-maven-plugin.version>
     <cobertura-maven-plugin.version>2.7</cobertura-maven-plugin.version>
@@ -100,7 +100,7 @@
     <license-maven-plugin.version>1.8</license-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <templating-maven-plugin.version>1.0-alpha-3</templating-maven-plugin.version>
-    <versions-maven-plugin.version>2.2</versions-maven-plugin.version>
+    <versions-maven-plugin.version>2.1</versions-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
     <maven.version>3.1.1</maven.version>
