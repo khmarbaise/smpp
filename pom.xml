@@ -488,7 +488,7 @@
         <artifactId>maven-pmd-plugin</artifactId>
         <version>${maven-pmd-plugin.version}</version>
         <configuration>
-          <targetJdk>${compileVersion}</targetJdk>
+          <targetJdk>${maven.compiler.target}</targetJdk>
         </configuration>
       </plugin>
 
