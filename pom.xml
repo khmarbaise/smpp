@@ -81,7 +81,6 @@
 
     <!-- The following things belong together -->
     <maven-site-plugin.version>3.4</maven-site-plugin.version>
-    <wagon-ssh.version>2.7</wagon-ssh.version>
 
     <!-- The following belong together -->
     <maven-failsafe-plugin.version>2.18.1</maven-failsafe-plugin.version>
