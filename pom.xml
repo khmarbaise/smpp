@@ -46,7 +46,7 @@
 
   <!-- Must be overwritten in every project. -->
   <issueManagement>
-    <system>default</system>
+    <system>GitHub</system>
     <url>https://github.com/khmarbaise/smpp/issues</url>
   </issueManagement>
 
@@ -60,8 +60,8 @@
     <maven-compiler-plugin.version>3.4</maven-compiler-plugin.version>
     <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
-    <maven-ear-plugin.version>2.10</maven-ear-plugin.version>
-    <maven-ejb-plugin.version>2.5</maven-ejb-plugin.version>
+    <maven-ear-plugin.version>2.10.1</maven-ear-plugin.version>
+    <maven-ejb-plugin.version>2.5.1</maven-ejb-plugin.version>
     <maven-enforcer-plugin.version>1.4</maven-enforcer-plugin.version>
     <maven-gpg-plugin.version>1.6</maven-gpg-plugin.version>
     <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
