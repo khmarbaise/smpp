@@ -4,7 +4,7 @@
 
   <groupId>com.soebes.smpp</groupId>
   <artifactId>smpp</artifactId>
-  <version>1.1.1-SNAPSHOT</version>
+  <version>1.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>SoEBeS Maven Parent POM</name>
