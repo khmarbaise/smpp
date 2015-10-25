@@ -56,7 +56,7 @@
     <maven-assembly-plugin.version>2.5.5</maven-assembly-plugin.version>
     <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
     <maven-checkstyle-plugin.version>2.15</maven-checkstyle-plugin.version>
-    <maven-clean-plugin.version>2.6.1</maven-clean-plugin.version>
+    <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.3</maven-compiler-plugin.version>
     <maven-dependency-plugin.version>2.10</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
@@ -69,9 +69,9 @@
     <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
     <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
     <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
-    <maven-pmd-plugin.version>3.4</maven-pmd-plugin.version>
-    <maven-project-info-reports-plugin.version>2.8</maven-project-info-reports-plugin.version>
-    <maven-release-plugin.version>2.5.2</maven-release-plugin.version>
+    <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
+    <maven-project-info-reports-plugin.version>2.8.1</maven-project-info-reports-plugin.version>
+    <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-remote-resources-plugin.version>1.5</maven-remote-resources-plugin.version>
     <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
     <maven-scm-publish-plugin.version>1.1</maven-scm-publish-plugin.version>
