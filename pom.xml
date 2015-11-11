@@ -67,6 +67,7 @@
     <maven-install-plugin.version>2.5.2</maven-install-plugin.version>
     <maven-invoker-plugin.version>2.0.0</maven-invoker-plugin.version>
     <maven-jar-plugin.version>2.6</maven-jar-plugin.version>
+    <maven-rar-plugin.version>2.4</maven-rar-plugin.version>
     <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
     <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
     <maven-pmd-plugin.version>3.5</maven-pmd-plugin.version>
@@ -221,6 +222,26 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-war-plugin</artifactId>
           <version>${maven-war-plugin.version}</version>
+          <configuration>
+            <archive>
+              <addMavenDescriptor>true</addMavenDescriptor>
+              <index>true</index>
+              <manifest>
+                <addDefaultImplementationEntries>true</addDefaultImplementationEntries>
+                <addDefaultSpecificationEntries>true</addDefaultSpecificationEntries>
+              </manifest>
+              <manifestEntries>
+                <artifactId>${project.artifactId}</artifactId>
+                <groupId>${project.groupId}</groupId>
+                <version>${project.version}</version>
+              </manifestEntries>
+            </archive>
+          </configuration>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-rar-plugin</artifactId>
+          <version>${maven-rar-plugin.version}</version>
           <configuration>
             <archive>
               <addMavenDescriptor>true</addMavenDescriptor>
