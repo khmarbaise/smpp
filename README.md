@@ -8,7 +8,7 @@ This pom defines some defaults which are used within [my](http://www.soebes.com)
 
 License
 -------
-[Apache License, Version 2.0, January 2004](http://www.apache.org/licenses/)
+[![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/khmarbaise/iterator-maven-plugin.svg)](http://www.apache.org/licenses/)
 
 Homepage
 --------
