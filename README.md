@@ -10,6 +10,8 @@ License
 -------
 [![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/khmarbaise/iterator-maven-plugin.svg?label=License)](http://www.apache.org/licenses/)
 
+[![Reference Status](https://www.versioneye.com/java/com.soebes.smpp:smpp/reference_badge.svg?style=flat)](https://www.versioneye.com/java/com.soebes.smpp:smpp/references)
+
 Homepage
 --------
 
