@@ -98,7 +98,7 @@
     <jdepend-maven-plugin.version>2.0</jdepend-maven-plugin.version>
     <license-maven-plugin.version>1.8</license-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
-    <templating-maven-plugin.version>1.0-alpha-3</templating-maven-plugin.version>
+    <templating-maven-plugin.version>1.0.0</templating-maven-plugin.version>
     <versions-maven-plugin.version>2.1</versions-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
