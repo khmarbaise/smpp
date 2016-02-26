@@ -131,7 +131,7 @@
     </snapshotRepository>
     <site>
       <id>github</id>
-      <url>scm:git:git@github.com:khmarbaise/smpp.git</url>
+      <url>scm:git:ssh://git@github.com/khmarbaise/smpp.git</url>
     </site>
   </distributionManagement>
 
