@@ -443,6 +443,27 @@
                 <requireMavenVersion>
                   <version>${maven.version}</version>
                 </requireMavenVersion>
+                <bannedDependencies>
+                  <excludes>
+                    <exclude>org.codehaus.plexus:plexus-component-api</exclude>
+                  </excludes>
+                  <message>The plexus-component-api conflicts with the plexus-container-default used by Maven. You probably added a dependency that is missing the exclusions.</message>
+                </bannedDependencies>
+                <requireNoRepositories>
+                  <message>The rules for repo1.maven.org are that pom.xml files should not include repository definitions. If repository definitions are included, they must be limited to SNAPSHOT only repositories.</message>
+                  <banRepositories>true</banRepositories>
+                  <banPluginRepositories>true</banPluginRepositories>
+                  <allowSnapshotRepositories>true</allowSnapshotRepositories>
+                  <allowedPluginRepositories>
+                    <allowedPluginRepository>ossrh-snapshots</allowedPluginRepository>
+                    <allowedPluginRepository>apache.snapshots</allowedPluginRepository>
+                  </allowedPluginRepositories>
+                </requireNoRepositories>
+                <requirePluginVersions>
+                  <message>Always define plugin versions! Never use LATEST or RELEASE.</message>
+                  <banLatest>true</banLatest>
+                  <banRelease>true</banRelease>
+                </requirePluginVersions>
               </rules>    
             </configuration>
           </execution>
