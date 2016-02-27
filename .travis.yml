@@ -1,0 +1,14 @@
+---
+language: java
+
+# No need to make a preliminary installation.
+install: true
+
+script:
+  - "mvn --show-version --errors --batch-mode -Prun-its clean verify"
+
+jdk:
+ - oraclejdk8
+ - oraclejdk7
+ - openjdk7
+ - openjdk6
