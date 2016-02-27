@@ -5,7 +5,7 @@ language: java
 install: true
 
 script:
-  - "mvn --show-version --errors --batch-mode -Prun-its clean verify"
+  - "mvn --show-version --errors --batch-mode clean verify"
 
 jdk:
  - oraclejdk8
