@@ -66,7 +66,7 @@
     <!-- Maven Plugins -->
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
-    <maven-changes-plugin.version>2.12</maven-changes-plugin.version>
+    <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
     <maven-checkstyle-plugin.version>2.16</maven-checkstyle-plugin.version>
     <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
@@ -110,7 +110,7 @@
     <license-maven-plugin.version>1.8</license-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <templating-maven-plugin.version>1.0.0</templating-maven-plugin.version>
-    <versions-maven-plugin.version>2.1</versions-maven-plugin.version>
+    <versions-maven-plugin.version>2.2</versions-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
     <maven.version>3.1.1</maven.version>
@@ -527,54 +527,6 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
-        <configuration>
-          <reportPlugins>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-project-info-reports-plugin</artifactId>
-              <version>${maven-project-info-report-plugin.version}</version>
-            </plugin>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-plugin-plugin</artifactId>
-              <version>${maven-plugin-plugin.version}</version>
-            </plugin>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-invoker-plugin</artifactId>
-            </plugin>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-surefire-report-plugin</artifactId>
-            </plugin>
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>jdepend-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-              <groupId>org.codehaus.mojo</groupId>
-              <artifactId>versions-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-failsafe-plugin</artifactId>
-            </plugin>
-            <plugin>
-              <groupId>org.apache.maven.plugins</groupId>
-              <artifactId>maven-javadoc-plugin</artifactId>
-              <version>${maven-javadoc-plugin.version}</version>
-              <reportSets>
-                <reportSet>
-                  <id>default</id>
-                  <reports>
-                    <report>javadoc</report>
-                    <report>test-javadoc</report>
-                  </reports>
-                </reportSet>
-              </reportSets>
-            </plugin>
-          </reportPlugins>
-        </configuration>
         <executions>
           <execution>
             <id>attach-descriptor</id>
@@ -618,9 +570,15 @@
         <artifactId>maven-changes-plugin</artifactId>
         <version>${maven-changes-plugin.version}</version>
         <configuration>
-          <issueLinkTemplatePerSystem>
-            <default>https://github.com/khmarbaise/${smpp.component}/issues/%ISSUE%</default>
-          </issueLinkTemplatePerSystem>
+          <githubAPIScheme>https</githubAPIScheme>
+          <githubAPIPort>443</githubAPIPort>
+          <includeOpenIssues>false</includeOpenIssues>
+          <onlyMilestoneIssues>true</onlyMilestoneIssues>
+          <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
+          <onlyCurrentVersion>true</onlyCurrentVersion>
+          <issueManagementSystems>
+            <issueManagementSystem>GitHub</issueManagementSystem>
+          </issueManagementSystems>
         </configuration>
         <reportSets>
           <reportSet>
@@ -859,7 +817,6 @@
           <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-changes-plugin</artifactId>
-            <version>${maven-changes-plugin.version}</version>
             <reportSets>
               <reportSet>
                 <reports>
@@ -867,15 +824,11 @@
                 </reports>
               </reportSet>
             </reportSets>
-            <configuration>
-              <includeOpenIssues>false</includeOpenIssues>
-              <onlyMilestoneIssues>true</onlyMilestoneIssues>
-              <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
-            </configuration>
           </plugin>
         </plugins>
       </reporting>
     </profile>
+  </profiles>
 
   <modules>
     <module>smpp-plugins</module>
