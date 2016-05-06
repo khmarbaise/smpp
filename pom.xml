@@ -66,7 +66,7 @@
     <!-- Maven Plugins -->
     <maven-antrun-plugin.version>1.8</maven-antrun-plugin.version>
     <maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
-    <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
+    <maven-changes-plugin.version>2.12</maven-changes-plugin.version>
     <maven-checkstyle-plugin.version>2.16</maven-checkstyle-plugin.version>
     <maven-clean-plugin.version>3.0.0</maven-clean-plugin.version>
     <maven-compiler-plugin.version>3.5.1</maven-compiler-plugin.version>
@@ -83,7 +83,7 @@
     <maven-javadoc-plugin.version>2.10.3</maven-javadoc-plugin.version>
     <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
     <maven-pmd-plugin.version>3.6</maven-pmd-plugin.version>
-    <maven-project-info-reports-plugin.version>2.8.1</maven-project-info-reports-plugin.version>
+    <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-remote-resources-plugin.version>1.5</maven-remote-resources-plugin.version>
     <maven-resources-plugin.version>2.7</maven-resources-plugin.version>
@@ -619,7 +619,7 @@
         <version>${maven-changes-plugin.version}</version>
         <configuration>
           <issueLinkTemplatePerSystem>
-            <default>https://github.com/khmarbaise/smpp/issues/%ISSUE%</default>
+            <default>https://github.com/khmarbaise/${smpp.component}/issues/%ISSUE%</default>
           </issueLinkTemplatePerSystem>
         </configuration>
         <reportSets>
@@ -843,7 +843,39 @@
         </plugins>
       </build>
     </profile>
-  </profiles>
+    <profile>
+      <!--
+        ! On travis-ci, the API rate limit for github reports is 
+        ! sometimes exceeded, so only render this when not run on travis.
+      -->
+      <id>githubreport-when-not-on-travis</id>
+      <activation>
+        <property>
+          <name>!env.TRAVIS</name>
+        </property>
+      </activation>
+      <reporting>
+        <plugins>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-changes-plugin</artifactId>
+            <version>${maven-changes-plugin.version}</version>
+            <reportSets>
+              <reportSet>
+                <reports>
+                  <report>github-report</report>
+                </reports>
+              </reportSet>
+            </reportSets>
+            <configuration>
+              <includeOpenIssues>false</includeOpenIssues>
+              <onlyMilestoneIssues>true</onlyMilestoneIssues>
+              <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
+            </configuration>
+          </plugin>
+        </plugins>
+      </reporting>
+    </profile>
 
   <modules>
     <module>smpp-plugins</module>
