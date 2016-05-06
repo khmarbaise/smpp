@@ -432,6 +432,7 @@
           <configuration>
             <pubScmUrl>${project.scm.developerConnection}</pubScmUrl>
             <scmBranch>gh-pages</scmBranch>
+            <content>${project.build.outputDirectory}/staging</content>
           </configuration>
           <executions>
             <execution>
