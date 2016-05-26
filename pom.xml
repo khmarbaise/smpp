@@ -571,8 +571,6 @@
         <artifactId>maven-changes-plugin</artifactId>
         <version>${maven-changes-plugin.version}</version>
         <configuration>
-          <githubAPIScheme>https</githubAPIScheme>
-          <githubAPIPort>443</githubAPIPort>
           <includeOpenIssues>false</includeOpenIssues>
           <onlyMilestoneIssues>true</onlyMilestoneIssues>
           <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
