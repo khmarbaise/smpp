@@ -62,17 +62,20 @@
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-utils</artifactId>
-        <version>3.0.23</version>
+        <version>3.0.24</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-archiver</artifactId>
-        <version>3.1.1</version>
+        <version>3.3</version>
       </dependency>
       <!--
         ! Maven Shared Components
       -->
       <dependency>
+        <!--
+          ! Some day we need to change the wrong groupId
+        -->
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-archiver</artifactId>
         <version>3.0.2</version>
@@ -80,7 +83,12 @@
       <dependency>
         <groupId>org.apache.maven.shared</groupId>
         <artifactId>maven-filtering</artifactId>
-        <version>3.1.0</version>
+        <version>3.1.1</version>
+      </dependency>
+      <dependency>
+        <groupId>org.apache.maven.shared</groupId>
+        <artifactId>maven-shared-utils</artifactId>
+        <version>3.0.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
