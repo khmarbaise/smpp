@@ -577,7 +577,7 @@
         <artifactId>maven-changes-plugin</artifactId>
         <version>${maven-changes-plugin.version}</version>
         <configuration>
-          <includeOpenIssues>false</includeOpenIssues>
+          <includeOpenIssues>true</includeOpenIssues>
           <onlyMilestoneIssues>true</onlyMilestoneIssues>
           <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
           <onlyCurrentVersion>true</onlyCurrentVersion>
