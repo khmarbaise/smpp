@@ -122,6 +122,12 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
           <version>${maven-plugin-plugin.version}</version>
+          <!--
+            ! Supporting Maven 3.0.5, 3.1.1
+          -->
+          <configuration>
+            <skipErrorNoDescriptorsFound>true</skipErrorNoDescriptorsFound>
+          </configuration>
           <executions>
             <execution>
               <goals>
