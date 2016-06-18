@@ -57,7 +57,7 @@
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-component-annotations</artifactId>
-        <version>1.6</version>
+        <version>1.7</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
@@ -67,18 +67,19 @@
       <dependency>
         <groupId>org.codehaus.plexus</groupId>
         <artifactId>plexus-archiver</artifactId>
-        <version>3.3</version>
+        <version>3.4</version>
       </dependency>
       <!--
         ! Maven Shared Components
       -->
       <dependency>
         <!--
-          ! Some day we need to change the wrong groupId
+          ! Some day we need to change the wrong groupId 
+          ! https://issues.apache.org/jira/browse/MSHARED-546
         -->
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-archiver</artifactId>
-        <version>3.0.2</version>
+        <version>3.1.1</version>
       </dependency>
       <dependency>
         <groupId>org.apache.maven.shared</groupId>
@@ -221,7 +222,7 @@
         <plugin>
           <groupId>org.codehaus.plexus</groupId>
           <artifactId>plexus-component-metadata</artifactId>
-          <version>1.6</version>
+          <version>1.7</version>
           <executions>
             <execution>
               <id>descriptors</id>
