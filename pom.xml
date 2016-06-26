@@ -1,4 +1,7 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -448,7 +451,7 @@
                 <goal>publish-scm</goal>
               </goals>
             </execution>
-         </executions>
+          </executions>
         </plugin>
       </plugins>
     </pluginManagement>
@@ -478,10 +481,12 @@
                   <excludes>
                     <exclude>org.codehaus.plexus:plexus-component-api</exclude>
                   </excludes>
-                  <message>The plexus-component-api conflicts with the plexus-container-default used by Maven. You probably added a dependency that is missing the exclusions.</message>
+                  <message>The plexus-component-api conflicts with the plexus-container-default used by Maven. You probably added a
+                    dependency that is missing the exclusions.</message>
                 </bannedDependencies>
                 <requireNoRepositories>
-                  <message>The rules for repo1.maven.org are that pom.xml files should not include repository definitions. If repository definitions are included, they must be limited to SNAPSHOT only repositories.</message>
+                  <message>The rules for repo1.maven.org are that pom.xml files should not include repository definitions. If
+                    repository definitions are included, they must be limited to SNAPSHOT only repositories.</message>
                   <banRepositories>true</banRepositories>
                   <banPluginRepositories>true</banPluginRepositories>
                   <allowSnapshotRepositories>true</allowSnapshotRepositories>
@@ -502,7 +507,8 @@
                   -->
                   <regex>scm:git:ssh://git@github.com/.*\.git.*</regex>
                   <regexMessage>
-                    ssh (scm:git:ssh://git@github.com/.*\.git) is the preferred protocol for project.scm.developerConnection, current value: ${project.scm.developerConnection}
+                    ssh (scm:git:ssh://git@github.com/.*\.git) is the preferred protocol for
+                    project.scm.developerConnection, current value: ${project.scm.developerConnection}
                   </regexMessage>
                 </requireProperty>
                 <requireProperty>
@@ -512,7 +518,8 @@
                   -->
                   <regex>scm:git:https://github.com/.*\.git.*</regex>
                   <regexMessage>
-                    https (scm:git:https://github.com/.*\.git) is the preferred protocol for project.scm.connection, current value: ${project.scm.connection}
+                    https (scm:git:https://github.com/.*\.git) is the preferred protocol for project.scm.connection,
+                    current value: ${project.scm.connection}
                   </regexMessage>
                 </requireProperty>
                 <requireProperty>
@@ -522,10 +529,11 @@
                   -->
                   <regex>https://github.com/.*</regex>
                   <regexMessage>
-                    Use https://github.com/.* as project.scm.url, especially using the prefix scm:git here will lead to unbrowseable links during site generation, current value: ${project.scm.url}
+                    Use https://github.com/.* as project.scm.url, especially using the prefix scm:git here will lead to
+                    unbrowseable links during site generation, current value: ${project.scm.url}
                   </regexMessage>
                 </requireProperty>
-              </rules>    
+              </rules>
             </configuration>
           </execution>
         </executions>
@@ -709,9 +717,9 @@
         <version>6.9.8</version>
       </dependency>
       <dependency>
-          <groupId>junit</groupId>
-          <artifactId>junit</artifactId>
-          <version>4.12</version>
+        <groupId>junit</groupId>
+        <artifactId>junit</artifactId>
+        <version>4.12</version>
       </dependency>
       <dependency>
         <groupId>org.mockito</groupId>
