@@ -98,28 +98,6 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>mrm-maven-plugin</artifactId>
-          <version>${mrm-maven-plugin.version}</version>
-          <configuration>
-            <propertyName>repository.proxy.url</propertyName>
-            <repositories>
-              <mockRepo>
-                <source>src/it-repo</source>
-              </mockRepo>
-              <proxyRepo />
-            </repositories>
-          </configuration>
-          <executions>
-            <execution>
-              <goals>
-                <goal>start</goal>
-                <goal>stop</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
           <version>${maven-plugin-plugin.version}</version>
@@ -235,6 +213,30 @@
         </plugin>
       </plugins>
     </pluginManagement>
+    <plugins>
+        <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>mrm-maven-plugin</artifactId>
+          <version>${mrm-maven-plugin.version}</version>
+          <configuration>
+            <propertyName>repository.proxy.url</propertyName>
+            <repositories>
+              <mockRepo>
+                <source>src/it-repo</source>
+              </mockRepo>
+              <proxyRepo />
+            </repositories>
+          </configuration>
+          <executions>
+            <execution>
+              <goals>
+                <goal>start</goal>
+                <goal>stop</goal>
+              </goals>
+            </execution>
+          </executions>
+        </plugin>
+     </plugins>
   </build>
 
   <reporting>
