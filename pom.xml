@@ -106,7 +106,7 @@
     <build-helper-maven-plugin.version>1.12</build-helper-maven-plugin.version>
     <buildnumber-maven-plugin.version>1.4</buildnumber-maven-plugin.version>
     <exec-maven-plugin.version>1.4.0</exec-maven-plugin.version>
-    <findbugs-maven-plugin.version>2.5.5</findbugs-maven-plugin.version>
+    <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
     <jdepend-maven-plugin.version>2.0</jdepend-maven-plugin.version>
     <license-maven-plugin.version>1.8</license-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
