@@ -455,6 +455,17 @@
             </execution>
           </executions>
         </plugin>
+        <!-- My Own Plugins -->
+        <plugin>
+          <groupId>com.soebes.maven.plugins</groupId>
+          <artifactId>echo-maven-plugin</artifactId>
+          <version>0.3.0</version>
+        </plugin>
+        <plugin>
+          <groupId>com.soebes.maven.plugins</groupId>
+          <artifactId>multienv-maven-plugin</artifactId>
+          <version>0.2.0</version>
+        </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
