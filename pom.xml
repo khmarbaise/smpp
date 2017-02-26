@@ -13,15 +13,6 @@
   <url>https://github.com/khmarbaise/${smpp.component}</url>
   <inceptionYear>2011</inceptionYear>
 
-  <!--
-    !  This marked as deprecated for Maven 3.X. This is checked by maven-enforcer-plugin
-    ! https://issues.apache.org/jira/browse/MNG-4840
-    ! https://issues.apache.org/jira/browse/MNG-5297
-  -->
-  <prerequisites>
-    <maven>${maven.version}</maven>
-  </prerequisites>
-
   <organization>
     <name>SoftwareEntwicklung Beratung Schulung</name>
     <url>http://www.soebes.com</url>
@@ -488,7 +479,8 @@
                   </plugins>
                 </requireSameVersions>
                 <requireMavenVersion>
-                  <version>${maven.version}</version>
+                  <version>3.0.5</version>
+                  <message>You need at least Maven 3.0.5+ to build projects.</message>
                 </requireMavenVersion>
                 <bannedDependencies>
                   <excludes>
