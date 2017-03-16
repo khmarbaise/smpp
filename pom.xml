@@ -1,4 +1,6 @@
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd"
+>
 
   <modelVersion>4.0.0</modelVersion>
 
@@ -39,7 +41,7 @@
   </developers>
 
   <!--
-    ! If we are on GitHub, just 
+    ! If we are on GitHub, just
     ! define the property if not
     ! just redefine it.
   -->
@@ -298,9 +300,9 @@
           <artifactId>maven-source-plugin</artifactId>
           <version>${maven-source-plugin.version}</version>
           <executions>
-            <!-- 
-              ! here we override the super-pom attach-sources execution id which 
-              ! calls sources:jar goal. That goals forks the lifecycle, 
+            <!--
+              ! here we override the super-pom attach-sources execution id which
+              ! calls sources:jar goal. That goals forks the lifecycle,
               ! causing the generate-sources phase to be called twice for the install goal.
               ! Starting with Maven 3.4.0 (https://issues.apache.org/jira/browse/MNG-5940)
               ! this is not needed anymore.
@@ -354,8 +356,8 @@
           <configuration>
             <!--
               ! Don't deploy with maven-site-plugin
-            <skipDeploy>true</skipDeploy>
-            <stagingDirectory>target/staging</stagingDirectory>
+              <skipDeploy>true</skipDeploy>
+              <stagingDirectory>target/staging</stagingDirectory>
             -->
           </configuration>
         </plugin>
@@ -455,11 +457,28 @@
         <plugin>
           <groupId>com.soebes.maven.plugins</groupId>
           <artifactId>multienv-maven-plugin</artifactId>
-          <version>0.2.0</version>
+          <version>0.3.0</version>
+        </plugin>
+        <plugin>
+          <groupId>org.jacoco</groupId>
+          <artifactId>jacoco-maven-plugin</artifactId>
+          <version>0.7.9</version>
         </plugin>
       </plugins>
     </pluginManagement>
     <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <executions>
+          <execution>
+            <goals>
+              <goal>prepare-agent</goal>
+              <goal>report</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-enforcer-plugin</artifactId>
@@ -508,7 +527,7 @@
                 <requireProperty>
                   <property>project.scm.developerConnection</property>
                   <!-- because Maven adds the artifactId to the the SCM-Url automatically for modules in a multimodule project,
-                  we need to allow stuff after .git.
+                    we need to allow stuff after .git.
                   -->
                   <regex>scm:git:ssh://git@github.com/.*\.git.*</regex>
                   <regexMessage>
@@ -519,7 +538,7 @@
                 <requireProperty>
                   <property>project.scm.connection</property>
                   <!-- because Maven adds the artifactId to the the SCM-Url automatically for modules in a multimodule project,
-                  we need to allow stuff after .git.
+                    we need to allow stuff after .git.
                   -->
                   <regex>scm:git:https://github.com/.*\.git.*</regex>
                   <regexMessage>
@@ -530,7 +549,7 @@
                 <requireProperty>
                   <property>project.scm.url</property>
                   <!-- because Maven adds the artifactId to the the SCM-Url automatically for modules in a multimodule project,
-                  we need to allow stuff after .git.
+                    we need to allow stuff after .git.
                   -->
                   <regex>https://github.com/.*</regex>
                   <regexMessage>
@@ -836,7 +855,7 @@
     </profile>
     <profile>
       <!--
-        ! On travis-ci, the API rate limit for github reports is 
+        ! On travis-ci, the API rate limit for github reports is
         ! sometimes exceeded, so only render this when not run on travis.
       -->
       <id>githubreport-when-not-on-travis</id>
