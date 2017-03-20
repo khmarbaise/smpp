@@ -4,7 +4,7 @@
 
   <groupId>com.soebes.smpp</groupId>
   <artifactId>smpp</artifactId>
-  <version>2.2.5-SNAPSHOT</version>
+  <version>2.3.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>SoEBeS Maven Parent POM</name>
@@ -743,6 +743,10 @@
           </tagListOptions>
         </configuration>
       </plugin>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+      </plugin>
     </plugins>
   </reporting>
 
@@ -850,33 +854,6 @@
           </plugin>
         </plugins>
       </build>
-    </profile>
-    <profile>
-      <!--
-        ! On travis-ci, the API rate limit for github reports is
-        ! sometimes exceeded, so only render this when not run on travis.
-      -->
-      <id>githubreport-when-not-on-travis</id>
-      <activation>
-        <property>
-          <name>!env.TRAVIS</name>
-        </property>
-      </activation>
-      <reporting>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-changes-plugin</artifactId>
-            <reportSets>
-              <reportSet>
-                <reports>
-                  <report>github-report</report>
-                </reports>
-              </reportSet>
-            </reportSets>
-          </plugin>
-        </plugins>
-      </reporting>
     </profile>
   </profiles>
 
