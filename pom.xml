@@ -105,7 +105,7 @@
     <versions-maven-plugin.version>2.3</versions-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
-    <maven.version>3.1.1</maven.version>
+    <maven.version>3.3.1</maven.version>
 
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -496,8 +496,8 @@
                   </plugins>
                 </requireSameVersions>
                 <requireMavenVersion>
-                  <version>3.0.5</version>
-                  <message>You need at least Maven 3.0.5+ to build projects.</message>
+                  <version>${maven.version}</version>
+                  <message>You need at least Maven ${maven.version}+ to build projects.</message>
                 </requireMavenVersion>
                 <bannedDependencies>
                   <excludes>
