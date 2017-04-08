@@ -14,8 +14,10 @@ The Maven Site for the current release [http://khmarbaise.github.com/smpp/](http
 
 Status
 ------
+ * productive version.
 
 TODOs
 -----
-- 
+
+ * See issue tracker https://github.com/khmarbaise/smpp/issues
 
