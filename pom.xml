@@ -806,10 +806,6 @@
         <version>1.35</version>
       </dependency>
 
-      <!--
-        ! Replacement for fest-assert*
-        ! Java 7
-      -->
       <dependency>
         <groupId>org.assertj</groupId>
         <artifactId>assertj-core</artifactId>
