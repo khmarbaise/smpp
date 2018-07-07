@@ -16,6 +16,7 @@ script:
 jdk:
  - oraclejdk8
  - oraclejdk9
+ - openjdk10
 
 cache:
   directories:

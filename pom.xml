@@ -87,9 +87,9 @@
     <maven-site-plugin.version>3.6</maven-site-plugin.version>
 
     <!-- The following belong together -->
-    <maven-failsafe-plugin.version>2.21.0</maven-failsafe-plugin.version>
-    <maven-surefire-plugin.version>2.21.0</maven-surefire-plugin.version>
-    <maven-surefire-report-plugin.version>2.21.0</maven-surefire-report-plugin.version>
+    <maven-failsafe-plugin.version>2.22.0</maven-failsafe-plugin.version>
+    <maven-surefire-plugin.version>2.22.0</maven-surefire-plugin.version>
+    <maven-surefire-report-plugin.version>2.22.0</maven-surefire-report-plugin.version>
 
 
     <!-- MojoHaus Plugins (formerly Codehaus) -->
@@ -111,8 +111,8 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!-- target/source of the java code 1.7. -->
-    <maven.compiler.source>1.7</maven.compiler.source>
-    <maven.compiler.target>1.7</maven.compiler.target>
+    <maven.compiler.source>1.8</maven.compiler.source>
+    <maven.compiler.target>1.8</maven.compiler.target>
 
     <smpp.component>smpp</smpp.component>
     <!--

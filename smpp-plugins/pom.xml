@@ -15,7 +15,7 @@
 
   <properties>
     <maven.version>3.0</maven.version>
-    <maven-plugin-plugin.version>3.5</maven-plugin-plugin.version>
+    <maven-plugin-plugin.version>3.5.2</maven-plugin-plugin.version>
     <gmaven-plugin.version>1.5</gmaven-plugin.version>
 
     <mrm-maven-plugin.version>1.1.0</mrm-maven-plugin.version>
