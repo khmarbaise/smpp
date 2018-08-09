@@ -60,7 +60,7 @@
     <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
     <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
     <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
-    <maven-compiler-plugin.version>3.7.0</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
     <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <maven-ear-plugin.version>3.0.1</maven-ear-plugin.version>
@@ -71,10 +71,10 @@
     <maven-invoker-plugin.version>3.1.0</maven-invoker-plugin.version>
     <maven-jar-plugin.version>3.1.0</maven-jar-plugin.version>
     <maven-rar-plugin.version>2.4</maven-rar-plugin.version>
-    <maven-javadoc-plugin.version>3.0.0</maven-javadoc-plugin.version>
+    <maven-javadoc-plugin.version>3.0.1</maven-javadoc-plugin.version>
     <maven-jxr-plugin.version>2.5</maven-jxr-plugin.version>
     <maven-pmd-plugin.version>3.7</maven-pmd-plugin.version>
-    <maven-project-info-reports-plugin.version>2.9</maven-project-info-reports-plugin.version>
+    <maven-project-info-reports-plugin.version>3.0.0</maven-project-info-reports-plugin.version>
     <maven-release-plugin.version>2.5.3</maven-release-plugin.version>
     <maven-remote-resources-plugin.version>1.5</maven-remote-resources-plugin.version>
     <maven-resources-plugin.version>3.1.0</maven-resources-plugin.version>
@@ -102,7 +102,7 @@
     <license-maven-plugin.version>1.8</license-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <templating-maven-plugin.version>1.0.0</templating-maven-plugin.version>
-    <versions-maven-plugin.version>2.4</versions-maven-plugin.version>
+    <versions-maven-plugin.version>2.5</versions-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
     <maven.version>3.3.1</maven.version>
@@ -110,7 +110,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <!-- target/source of the java code 1.7. -->
+    <!-- target/source of the java code 1.8. -->
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
 
