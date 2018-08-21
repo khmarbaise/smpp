@@ -171,7 +171,7 @@
           <version>${maven-release-plugin.version}</version>
           <configuration>
             <arguments>${arguments}</arguments>
-            <goals>deploy site site:stage scm-publish:publish-scm</goals>
+            <goals>deploy site:site site:stage scm-publish:publish-scm</goals>
             <autoVersionSubmodules>true</autoVersionSubmodules>
           </configuration>
         </plugin>
