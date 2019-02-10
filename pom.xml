@@ -100,10 +100,10 @@
     <exec-maven-plugin.version>1.6.0</exec-maven-plugin.version>
     <findbugs-maven-plugin.version>3.0.4</findbugs-maven-plugin.version>
     <jdepend-maven-plugin.version>2.0</jdepend-maven-plugin.version>
-    <license-maven-plugin.version>1.8</license-maven-plugin.version>
+    <license-maven-plugin.version>1.17</license-maven-plugin.version>
     <taglist-maven-plugin.version>2.4</taglist-maven-plugin.version>
     <templating-maven-plugin.version>1.0.0</templating-maven-plugin.version>
-    <versions-maven-plugin.version>2.5</versions-maven-plugin.version>
+    <versions-maven-plugin.version>2.7</versions-maven-plugin.version>
 
     <!-- The minimum maven version we expect to build with. -->
     <maven.version>3.3.1</maven.version>
