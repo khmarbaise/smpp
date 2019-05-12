@@ -60,7 +60,7 @@
     <maven-changes-plugin.version>2.11</maven-changes-plugin.version>
     <maven-checkstyle-plugin.version>2.17</maven-checkstyle-plugin.version>
     <maven-clean-plugin.version>3.1.0</maven-clean-plugin.version>
-    <maven-compiler-plugin.version>3.8.0</maven-compiler-plugin.version>
+    <maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
     <maven-dependency-plugin.version>3.1.1</maven-dependency-plugin.version>
     <maven-deploy-plugin.version>2.8.2</maven-deploy-plugin.version>
     <maven-ear-plugin.version>3.0.1</maven-ear-plugin.version>
@@ -111,10 +111,6 @@
 
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-
-    <!-- target/source of the java code 1.8. -->
-    <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
 
     <smpp.component>smpp</smpp.component>
     <!--
@@ -477,7 +473,7 @@
         <plugin>
           <groupId>org.jacoco</groupId>
           <artifactId>jacoco-maven-plugin</artifactId>
-          <version>0.8.3</version>
+          <version>0.8.4</version>
         </plugin>
       </plugins>
     </pluginManagement>
