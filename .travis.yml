@@ -14,11 +14,9 @@ script:
   - "./mvnw --show-version --errors --batch-mode clean verify"
 
 jdk:
- - oraclejdk8
- - openjdk9
- - openjdk10
+ - openjdk8
  - openjdk11
- - openjdk12
+ - openjdk13
 
 cache:
   directories:
