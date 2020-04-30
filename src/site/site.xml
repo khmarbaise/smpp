@@ -2,8 +2,8 @@
     xsi:schemaLocation="http://maven.apache.org/DECORATION/1.7.0 http://maven.apache.org/xsd/decoration-1.7.0.xsd">
 
   <bannerRight>
-    <src>http://soebes.de/images/weblogo.gif</src>
-    <href>http://www.soebes.de/</href>
+    <src>https://soebes.de/images/weblogo.gif</src>
+    <href>https://www.soebes.de/</href>
   </bannerRight>
   <skin>
     <groupId>org.apache.maven.skins</groupId>

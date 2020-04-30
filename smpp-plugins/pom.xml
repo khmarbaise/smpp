@@ -170,7 +170,7 @@
             <settingsFile>src/it/settings.xml</settingsFile>
             <!-- Currently working with more than one thread does not work, cause
               it is not guaranteed that the setup-config project is build at first. see
-              also http://jira.codehaus.org/browse/MINVOKER-147 -->
+              also https://jira.codehaus.org/browse/MINVOKER-147 -->
             <parallelThreads>1</parallelThreads>
             <filterProperties>
               <repository.proxy.url>${repository.proxy.url}</repository.proxy.url>

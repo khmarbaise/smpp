@@ -26,7 +26,7 @@
 SoEBeS Maven Parent POM
 
   This Maven parent is intended as parent for all projects under 
-  the groupId {{{http://repo1.maven.org/maven2/com/soebes/}com.soebes}}.
+  the groupId {{{https://repo1.maven.org/maven2/com/soebes/}com.soebes}}.
 
 * Overview
 
