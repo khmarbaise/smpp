@@ -18,7 +18,6 @@
     <maven-plugin-plugin.version>3.6.0</maven-plugin-plugin.version>
     <gmaven-plugin.version>1.5</gmaven-plugin.version>
 
-    <mrm-maven-plugin.version>1.2.0</mrm-maven-plugin.version>
   </properties>
 
   <dependencyManagement>
@@ -100,7 +99,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
-          <version>${maven-plugin-plugin.version}</version>
+          <version>3.6.0</version>
           <executions>
             <execution>
               <goals>
@@ -113,7 +112,7 @@
         <plugin>
           <groupId>org.codehaus.gmaven</groupId>
           <artifactId>gmaven-plugin</artifactId>
-          <version>${gmaven-plugin.version}</version>
+          <version>1.5</version>
           <configuration>
             <debug>false</debug>
             <verbose>true</verbose>
@@ -211,7 +210,7 @@
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>mrm-maven-plugin</artifactId>
-          <version>${mrm-maven-plugin.version}</version>
+          <version>1.2.0</version>
           <configuration>
             <propertyName>repository.proxy.url</propertyName>
             <repositories>
@@ -221,14 +220,6 @@
               <proxyRepo />
             </repositories>
           </configuration>
-          <executions>
-            <execution>
-              <goals>
-                <goal>start</goal>
-                <goal>stop</goal>
-              </goals>
-            </execution>
-          </executions>
         </plugin>
      </plugins>
   </build>
