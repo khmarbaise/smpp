@@ -1,14 +1,14 @@
 releasenotes:
   sections:
-    - title: "Bug Fixes"
-      emoji: "🐞"
-      labels: ["bug"]
-    - title: "Improvement"
-      emoji: "⭐"
-      labels: ["improvement"]
-    - title: "Dependency Upgrades"
-      emoji: "🔨"
-      labels: ["dependency-upgrade"]
-    - title: "Documentation"
-      emoji: "📔"
-      labels: ["documentation"]
+  - title: "Bug Fixes"
+    emoji: "🐞"
+    labels: ["bug"]
+  - title: "Improvement"
+    emoji: "⭐"
+    labels: ["improvement"]
+  - title: "Dependency Upgrades"
+    emoji: "🔨"
+    labels: ["dependency-upgrade"]
+  - title: "Documentation"
+    emoji: "📔"
+    labels: ["documentation"]
