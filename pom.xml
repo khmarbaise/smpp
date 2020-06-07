@@ -420,7 +420,16 @@
           <configuration>
             <pubScmUrl>${project.scm.developerConnection}</pubScmUrl>
             <scmBranch>gh-pages</scmBranch>
-            <content>${project.build.directory}/staging</content>
+            <!--
+              ! Make mvn site:stage working correctly in combination with scm-publish.
+            -->
+            <content>${project.build.directory}/staging/${project.artifactId}</content>
+              <!--
+               ! The directory where to put the SNAPSHOT of master.
+               ! which is deployed by GitHub action (site-publish.yml).
+               ! So we ignore  this directory simply.
+              -->
+              <ignorePathsToDelete>snapshot</ignorePathsToDelete>
           </configuration>
           <executions>
             <execution>
