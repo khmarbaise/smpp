@@ -595,26 +595,6 @@
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-changes-plugin</artifactId>
-        <configuration>
-          <includeOpenIssues>true</includeOpenIssues>
-          <onlyMilestoneIssues>true</onlyMilestoneIssues>
-          <runOnlyAtExecutionRoot>true</runOnlyAtExecutionRoot>
-          <onlyCurrentVersion>true</onlyCurrentVersion>
-          <issueManagementSystems>
-            <issueManagementSystem>GitHub</issueManagementSystem>
-          </issueManagementSystems>
-        </configuration>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>changes-report</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-surefire-report-plugin</artifactId>
         <reportSets>
           <reportSet>
