@@ -317,13 +317,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.9.0</version>
-          <configuration>
-            <!--
-              ! Don't deploy with maven-site-plugin
-              <skipDeploy>true</skipDeploy>
-              <stagingDirectory>target/staging</stagingDirectory>
-            -->
-          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -428,7 +421,7 @@
             <!--
               ! Make mvn site:stage working correctly in combination with scm-publish.
             -->
-            <content>${project.build.directory}/staging/${project.artifactId}</content>
+            <content>${project.build.directory}/staging</content>
               <!--
                ! The directory where to put the SNAPSHOT of master.
                ! which is deployed by GitHub action (site-publish.yml).
