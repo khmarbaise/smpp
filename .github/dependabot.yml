@@ -4,7 +4,7 @@ updates:
     directory: "/"
     schedule:
       interval: "daily"
-    default_labels:
+    labels:
       - "dependency-upgrade"
       - "dependabot"
     # We want to keep compatibility with Maven 3.6.0
