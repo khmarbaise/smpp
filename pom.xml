@@ -65,6 +65,7 @@
       ! set the default arguments for maven-release-plugin
     -->
     <arguments />
+    <maven.compiler.release>11</maven.compiler.release>
   </properties>
 
   <scm>
@@ -695,6 +696,7 @@
   <!-- mvn -Darguments="-Dgpg.passphrase=xxxx" release:perform -->
   <profiles>
     <profile>
+      <id>perform-release</id>
       <activation>
         <property>
           <name>performRelease</name>
