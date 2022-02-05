@@ -407,11 +407,6 @@
         </plugin>
         <plugin>
           <groupId>org.codehaus.mojo</groupId>
-          <artifactId>jdepend-maven-plugin</artifactId>
-          <version>2.0</version>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
           <artifactId>versions-maven-plugin</artifactId>
           <version>2.9.0</version>
         </plugin>
@@ -661,17 +656,6 @@
               <report>dependency-management</report>
               <report>plugin-management</report>
               <report>plugins</report>
-            </reports>
-          </reportSet>
-        </reportSets>
-      </plugin>
-      <plugin>
-        <groupId>org.codehaus.mojo</groupId>
-        <artifactId>jdepend-maven-plugin</artifactId>
-        <reportSets>
-          <reportSet>
-            <reports>
-              <report>generate-no-fork</report>
             </reports>
           </reportSet>
         </reportSets>
