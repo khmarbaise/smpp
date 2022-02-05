@@ -578,21 +578,6 @@
           </execution>
         </executions>
       </plugin>
-
-      <plugin>
-        <groupId>org.tinyjee.dim</groupId>
-        <artifactId>doxia-include-macro</artifactId>
-        <version>1.1</version>
-        <executions>
-          <execution>
-            <id>initialize-doxia-include-macro</id>
-            <phase>pre-site</phase>
-            <goals>
-              <goal>initialize</goal>
-            </goals>
-          </execution>
-        </executions>
-      </plugin>
     </plugins>
   </build>
 
