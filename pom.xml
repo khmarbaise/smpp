@@ -55,7 +55,7 @@
 
   <properties>
     <!-- The minimum maven version we expect to build with. -->
-    <maven.version>3.6.0</maven.version>
+    <maven.version>3.8.4</maven.version>
 
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
