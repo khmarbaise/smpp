@@ -108,6 +108,7 @@
           <artifactId>maven-release-plugin</artifactId>
           <version>3.0.0-M5</version>
           <configuration>
+            <releaseProfiles>perform-release</releaseProfiles>
             <arguments>${arguments}</arguments>
             <goals>deploy site site:stage scm-publish:publish-scm</goals>
             <autoVersionSubmodules>true</autoVersionSubmodules>
@@ -697,12 +698,6 @@
   <profiles>
     <profile>
       <id>perform-release</id>
-      <activation>
-        <property>
-          <name>performRelease</name>
-          <value>true</value>
-        </property>
-      </activation>
       <build>
         <plugins>
           <plugin>
