@@ -48,8 +48,8 @@
     <url>https://github.com/khmarbaise/${smpp.component}/issues</url>
   </issueManagement>
   <ciManagement>
-    <system>Travis-CI</system>
-    <url>https://travis-ci.org/khmarbaise/${smpp.component}</url>
+    <system>github</system>
+    <url>https://github.com/khmarbaise/${smpp.component}/actions</url>
   </ciManagement>
 
 
