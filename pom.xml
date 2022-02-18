@@ -254,19 +254,6 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-source-plugin</artifactId>
           <version>3.2.1</version>
-          <executions>
-            <!--
-              ! here we override the super-pom attach-sources execution id which
-              ! calls sources:jar goal. That goals forks the lifecycle,
-              ! causing the generate-sources phase to be called twice for the install goal.
-              ! See for reference https://issues.apache.org/jira/browse/MNG-5940 will be
-              ! part of the next Maven releases to make this superfluous.
-            -->
-            <execution>
-              <id>attach-sources</id>
-              <phase>DISABLE_FORKED_LIFECYCLE_MSOURCES-13</phase>
-            </execution>
-          </executions>
         </plugin>
 
         <plugin>
@@ -709,20 +696,6 @@
                 <phase>verify</phase>
                 <goals>
                   <goal>sign</goal>
-                </goals>
-              </execution>
-            </executions>
-          </plugin>
-          <!-- MSOURCES-13 related workaround overriding super-pom -->
-          <plugin>
-            <inherited>true</inherited>
-            <artifactId>maven-source-plugin</artifactId>
-            <executions>
-              <execution>
-                <id>attach-sources-no-fork</id>
-                <inherited>true</inherited>
-                <goals>
-                  <goal>jar-no-fork</goal>
                 </goals>
               </execution>
             </executions>
