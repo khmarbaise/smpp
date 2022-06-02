@@ -42,7 +42,7 @@
       <dependency>
         <groupId>org.codehaus.groovy</groupId>
         <artifactId>groovy</artifactId>
-        <version>3.0.5</version>
+        <version>3.0.11</version>
       </dependency>
       <dependency>
         <groupId>org.codehaus.gmaven.runtime</groupId>
@@ -128,7 +128,7 @@
             <dependency>
               <groupId>org.codehaus.groovy</groupId>
               <artifactId>groovy</artifactId>
-              <version>3.0.5</version>
+              <version>3.0.11</version>
             </dependency>
             <dependency>
               <groupId>org.codehaus.gmaven.runtime</groupId>
@@ -144,7 +144,7 @@
             <dependency>
               <groupId>org.codehaus.groovy</groupId>
               <artifactId>groovy</artifactId>
-              <version>3.0.5</version>
+              <version>3.0.11</version>
             </dependency>
             <dependency>
               <groupId>org.codehaus.gmaven.runtime</groupId>
