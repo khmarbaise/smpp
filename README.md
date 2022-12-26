@@ -22,6 +22,15 @@ Status
 ------
  * productive version.
 
+Create Issues
+-------------
+
+Issues can simply being created via gh command line client via:
+```
+gh issue create --label dependency-upgrade -m 5.3.11 -a "@me" --body '' --title "Upgrade maven-install-plugin to 3.1.0"
+```
+The `-m` defines the milestone while the given `--body ''` is needed to make the rest of the call non interactive.
+ 
 TODOs
 -----
 
