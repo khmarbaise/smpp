@@ -55,7 +55,7 @@
 
   <properties>
     <!-- The minimum maven version we expect to build with. -->
-    <maven.version>3.8.4</maven.version>
+    <minimum.maven.version>3.8.4</minimum.maven.version>
 
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -507,8 +507,8 @@
                   </plugins>
                 </requireSameVersions>
                 <requireMavenVersion>
-                  <version>${maven.version}</version>
-                  <message>You need at least Maven ${maven.version}+ to build projects.</message>
+                  <version>${minimum.maven.version}</version>
+                  <message>You need at least Maven ${minimum.maven.version}+ to build projects.</message>
                 </requireMavenVersion>
                 <bannedDependencies>
                   <excludes>
