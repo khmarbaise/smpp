@@ -757,6 +757,5 @@
 
   <modules>
     <module>smpp-plugins</module>
-    <module>smpp-boot</module>
   </modules>
 </project>
