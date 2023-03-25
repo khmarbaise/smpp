@@ -30,6 +30,22 @@ Issues can simply being created via gh command line client via:
 gh issue create --label dependency-upgrade -m 5.3.11 -a "@me" --body '' --title "Upgrade maven-install-plugin to 3.1.0"
 ```
 The `-m` defines the milestone while the given `--body ''` is needed to make the rest of the call non interactive.
+
+Upgrade versions
+----------------
+
+The major version can be incremented by using the following:
+```
+$ mvn build-helper:parse-version versions:set@major 
+```
+The minor version can be incremented by using the following:
+```
+$ mvn build-helper:parse-version versions:set@minor 
+```
+The patch version can be incremented by the following:
+```
+$ mvn build-helper:parse-version versions:set@patch 
+```
  
 TODOs
 -----
