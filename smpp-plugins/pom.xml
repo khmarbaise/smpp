@@ -13,81 +13,24 @@
 
   <name>SoEBeS Maven Parent POM for Plugins</name>
 
-  <properties>
-    <maven.version>3.0</maven.version>
-    <gmaven-plugin.version>1.5</gmaven-plugin.version>
-
-  </properties>
-
   <dependencyManagement>
-
     <dependencies>
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-core</artifactId>
-        <version>${maven.version}</version>
+        <version>3.2.5</version>
       </dependency>
       <dependency>
         <groupId>org.apache.maven</groupId>
         <artifactId>maven-plugin-api</artifactId>
-        <version>${maven.version}</version>
+        <version>3.2.5</version>
         <scope>provided</scope>
       </dependency>
       <dependency>
         <groupId>org.apache.maven.plugin-tools</groupId>
         <artifactId>maven-plugin-annotations</artifactId>
-        <version>3.6.4</version>
+        <version>3.8.1</version>
         <scope>provided</scope>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.groovy</groupId>
-        <artifactId>groovy</artifactId>
-        <version>3.0.5</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.gmaven.runtime</groupId>
-        <artifactId>gmaven-runtime-1.8</artifactId>
-        <version>1.4</version>
-      </dependency>
-      <!--
-        ! Plexus
-      -->
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-component-annotations</artifactId>
-        <version>2.1.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-utils</artifactId>
-        <version>3.3.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.codehaus.plexus</groupId>
-        <artifactId>plexus-archiver</artifactId>
-        <version>4.2.2</version>
-      </dependency>
-      <!--
-        ! Maven Shared Components
-      -->
-      <dependency>
-        <!--
-          ! Some day we need to change the wrong groupId 
-          ! https://issues.apache.org/jira/browse/MSHARED-546
-        -->
-        <groupId>org.apache.maven</groupId>
-        <artifactId>maven-archiver</artifactId>
-        <version>3.5.0</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.maven.shared</groupId>
-        <artifactId>maven-filtering</artifactId>
-        <version>3.1.1</version>
-      </dependency>
-      <dependency>
-        <groupId>org.apache.maven.shared</groupId>
-        <artifactId>maven-shared-utils</artifactId>
-        <version>3.2.1</version>
       </dependency>
     </dependencies>
   </dependencyManagement>
@@ -98,6 +41,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-plugin-plugin</artifactId>
+          <version>3.8.1</version>
           <executions>
             <execution>
               <goals>
@@ -107,119 +51,8 @@
             </execution>
           </executions>
         </plugin>
-        <plugin>
-          <groupId>org.codehaus.gmaven</groupId>
-          <artifactId>gmaven-plugin</artifactId>
-          <version>1.5</version>
-          <configuration>
-            <debug>false</debug>
-            <verbose>true</verbose>
-            <stacktrace>true</stacktrace>
-            <defaultScriptExtension>.groovy</defaultScriptExtension>
-          </configuration>
-          <executions>
-            <execution>
-              <goals>
-                <goal>testCompile</goal>
-              </goals>
-            </execution>
-          </executions>
-          <dependencies>
-            <dependency>
-              <groupId>org.codehaus.groovy</groupId>
-              <artifactId>groovy</artifactId>
-              <version>3.0.5</version>
-            </dependency>
-            <dependency>
-              <groupId>org.codehaus.gmaven.runtime</groupId>
-              <artifactId>gmaven-runtime-1.8</artifactId>
-              <version>1.4</version>
-            </dependency>
-          </dependencies>
-        </plugin>
-        <plugin>
-          <groupId>org.apache.maven.plugins</groupId>
-          <artifactId>maven-invoker-plugin</artifactId>
-          <dependencies>
-            <dependency>
-              <groupId>org.codehaus.groovy</groupId>
-              <artifactId>groovy</artifactId>
-              <version>3.0.5</version>
-            </dependency>
-            <dependency>
-              <groupId>org.codehaus.gmaven.runtime</groupId>
-              <artifactId>gmaven-runtime-1.8</artifactId>
-              <version>1.4</version>
-            </dependency>
-          </dependencies>
-          <configuration>
-            <addTestClassPath>true</addTestClassPath>
-            <debug>false</debug>
-            <localRepositoryPath>${project.build.directory}/local-repo</localRepositoryPath>
-            <cloneProjectsTo>${project.build.directory}/it</cloneProjectsTo>
-            <projectsDirectory>src/it</projectsDirectory>
-            <showVersion>false</showVersion>
-            <pomIncludes>
-              <pomInclude>**/pom.xml</pomInclude>
-            </pomIncludes>
-            <preBuildHookScript>setup</preBuildHookScript>
-            <postBuildHookScript>verify</postBuildHookScript>
-            <settingsFile>src/it/settings.xml</settingsFile>
-            <!-- Currently working with more than one thread does not work, cause
-              it is not guaranteed that the setup-config project is build at first. see
-              also https://jira.codehaus.org/browse/MINVOKER-147 -->
-            <parallelThreads>1</parallelThreads>
-            <filterProperties>
-              <repository.proxy.url>${repository.proxy.url}</repository.proxy.url>
-            </filterProperties>
-          </configuration>
-          <executions>
-            <execution>
-              <id>pre-integration-tests</id>
-              <goals>
-                <goal>install</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>integration-tests</id>
-              <goals>
-                <goal>run</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
-        <plugin>
-          <groupId>org.codehaus.plexus</groupId>
-          <artifactId>plexus-component-metadata</artifactId>
-          <version>2.1.0</version>
-          <executions>
-            <execution>
-              <id>descriptors</id>
-              <goals>
-                <goal>generate-metadata</goal>
-                <goal>generate-test-metadata</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
       </plugins>
     </pluginManagement>
-    <plugins>
-        <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>mrm-maven-plugin</artifactId>
-          <version>1.5.0</version>
-          <configuration>
-            <propertyName>repository.proxy.url</propertyName>
-            <repositories>
-              <mockRepo>
-                <source>src/it-repo</source>
-              </mockRepo>
-              <proxyRepo />
-            </repositories>
-          </configuration>
-        </plugin>
-     </plugins>
   </build>
 
   <reporting>
