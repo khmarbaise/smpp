@@ -261,7 +261,7 @@
           <artifactId>maven-compiler-plugin</artifactId>
           <version>3.11.0</version>
           <configuration>
-            <compilerArgs>
+            <compilerArgs combine.children="append">
               <arg>-Xlint:all</arg>
               <arg>-Xlint:-processing</arg>
             </compilerArgs>
