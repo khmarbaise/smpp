@@ -29,10 +29,10 @@ jobs:
   linux:
     name: Linux
     runs-on: ubuntu-latest
-    container: "maven:3.8.4-jdk-8-slim"
+    container: "maven:3.8.6-openjdk-11-slim"
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-ubuntu-latest-${{ hashFiles('**/pom.xml') }}
@@ -43,16 +43,13 @@ jobs:
     name: 'Windows'
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/checkout@v3
+      - name: 'Set up JDK 11'
+        uses: actions/setup-java@v3
         with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-windows-latest-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-windows-latest
-      - name: 'Set up JDK 8'
-        uses: actions/setup-java@v1
-        with:
-          java-version: 8
+          distribution: "temurin"
+          java-version: 11
+          cache: 'maven'
       - name: 'Build'
         shell: bash
         run: mvn -V --no-transfer-progress clean verify --fail-at-end
@@ -60,15 +57,12 @@ jobs:
     name: 'Mac OS'
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/checkout@v3
+      - name: 'Set up JDK 11'
+        uses: actions/setup-java@v3
         with:
-          path: ~/.m2/repository
-          key: ${{ runner.os }}-maven-macos-latest-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ${{ runner.os }}-maven-macos-latest
-      - name: 'Set up JDK 8'
-        uses: actions/setup-java@v1
-        with:
-          java-version: 8
+          distribution: "temurin"
+          java-version: 11
+          cache: 'maven'
       - name: 'Build'
         run: mvn -V --no-transfer-progress clean verify --fail-at-end

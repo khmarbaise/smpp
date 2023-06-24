@@ -30,13 +30,13 @@ jobs:
   openjdk:
     strategy:
       matrix:
-        jdk: [jdk-8-slim, jdk-11-slim, openjdk-17]
+        jdk: [openjdk-18-slim]
     name: "OpenJDK ${{ matrix.jdk }}"
     runs-on: ubuntu-latest
-    container: "maven:3.8.4-${{ matrix.jdk }}"
+    container: "maven:3.8.7-${{ matrix.jdk }}"
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/cache@v1
+      - uses: actions/checkout@v3
+      - uses: actions/cache@v3
         with:
           path: ~/.m2/repository
           key: ${{ runner.os }}-maven-${{ matrix.jdk }}-${{ hashFiles('**/pom.xml') }}
