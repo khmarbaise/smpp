@@ -39,7 +39,7 @@ jobs:
         with:
           distribution: 'jdkfile'
           jdkFile: ${{ runner.temp }}/java_package.tar.gz
-          java-version: 21-ea+28
+          java-version: 21-ea
           cache: 'maven'
           check-latest: true
       - name: 'Build'
