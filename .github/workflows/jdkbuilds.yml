@@ -30,10 +30,10 @@ jobs:
   openjdk:
     strategy:
       matrix:
-        jdk: [openjdk-18-slim]
+        jdk: [eclipse-temurin-21-alpine]
     name: "OpenJDK ${{ matrix.jdk }}"
     runs-on: ubuntu-latest
-    container: "maven:3.8.7-${{ matrix.jdk }}"
+    container: "maven:3.9.6-${{ matrix.jdk }}"
     steps:
       - uses: actions/checkout@v3
       - uses: actions/cache@v3
