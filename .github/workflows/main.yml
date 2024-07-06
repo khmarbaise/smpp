@@ -31,7 +31,7 @@ jobs:
     runs-on: ubuntu-latest
     container: "maven:3.8.6-openjdk-11-slim"
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - uses: actions/cache@v4
         with:
           path: ~/.m2/repository
@@ -43,7 +43,7 @@ jobs:
     name: 'Windows'
     runs-on: windows-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 'Set up JDK 21'
         uses: actions/setup-java@v4
         with:
@@ -57,7 +57,7 @@ jobs:
     name: 'Mac OS'
     runs-on: macos-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: 'Set up JDK 21'
         uses: actions/setup-java@v4
         with:
