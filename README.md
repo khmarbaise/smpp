@@ -5,7 +5,6 @@ This pom defines the defaults which are used within [my](https://www.soebes.com)
 
 [![Apache License, Version 2.0, January 2004](https://img.shields.io/github/license/khmarbaise/smpp.svg?label=License)](https://www.apache.org/licenses/)
 [![Maven Central](https://img.shields.io/maven-central/v/com.soebes.smpp/smpp.svg?label=Maven%20Central)](https://search.maven.org/#search%7Cga%7C1%7Ccom.soebes.smpp)
-[![JDKBuilds](https://github.com/khmarbaise/smpp/workflows/JDKBuilds/badge.svg)][jdkbuilds]
 [![Main](https://github.com/khmarbaise/smpp/workflows/Main/badge.svg)][mainbuilds]
 [![Site](https://github.com/khmarbaise/smpp/workflows/SitePublishing/badge.svg)][published-site]
 [![Issues](https://img.shields.io/github/issues/khmarbaise/smpp)](https://github.com/khmarbaise/smpp/issues)
