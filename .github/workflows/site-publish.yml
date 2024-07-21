@@ -26,6 +26,7 @@ jobs:
   update-site:
     name: Linux
     runs-on: ubuntu-latest
+    container: "maven:3.9.8-eclipse-temurin-22-alpine"
     steps:
       - uses: actions/checkout@v4
       - name: 'Setup JDK 22'
