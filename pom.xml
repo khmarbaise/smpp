@@ -795,7 +795,4 @@
     </profile>
   </profiles>
 
-  <modules>
-    <module>smpp-plugins</module>
-  </modules>
 </project>
