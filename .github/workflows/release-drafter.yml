@@ -2,8 +2,7 @@ name: Release Drafter
 
 on:
   milestone:
-    types:
-      - closed
+    types: [closed]
 
 permissions:
   contents: read
