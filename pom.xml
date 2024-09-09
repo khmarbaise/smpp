@@ -60,7 +60,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <maven.surefire.version>3.4.0</maven.surefire.version>
+    <maven.surefire.version>3.5.0</maven.surefire.version>
     <smpp.component>smpp</smpp.component>
     <!--
       ! set the default arguments for maven-release-plugin
