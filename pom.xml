@@ -71,7 +71,7 @@
 
   <scm>
     <connection>scm:git:https://github.com/khmarbaise/smpp.git</connection>
-    <developerConnection>scm:git:ssh://git@github.com/khmarbaise/smpp.git</developerConnection>
+    <developerConnection>scm:git:https://github.com/khmarbaise/smpp.git</developerConnection>
     <url>https://github.com/khmarbaise/smpp</url>
     <tag>HEAD</tag>
   </scm>
@@ -544,17 +544,6 @@
                   <banLatest>true</banLatest>
                   <banRelease>true</banRelease>
                 </requirePluginVersions>
-                <requireProperty>
-                  <property>project.scm.developerConnection</property>
-                  <!-- because Maven adds the artifactId to the the SCM-Url automatically for modules in a multimodule project,
-                    we need to allow stuff after .git.
-                  -->
-                  <regex>scm:git:ssh://git@github.com/.*\.git.*</regex>
-                  <regexMessage>
-                    ssh (scm:git:ssh://git@github.com/.*\.git) is the preferred protocol for
-                    project.scm.developerConnection, current value: ${project.scm.developerConnection}
-                  </regexMessage>
-                </requireProperty>
                 <requireProperty>
                   <property>project.scm.connection</property>
                   <!-- because Maven adds the artifactId to the the SCM-Url automatically for modules in a multimodule project,
