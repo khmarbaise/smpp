@@ -71,7 +71,7 @@
 
   <scm>
     <connection>scm:git:https://github.com/khmarbaise/smpp.git</connection>
-    <developerConnection>scm:git:https://github.com/khmarbaise/smpp.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:khmarbaise/smpp.git</developerConnection>
     <url>https://github.com/khmarbaise/smpp</url>
     <tag>HEAD</tag>
   </scm>
