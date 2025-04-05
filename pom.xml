@@ -8,8 +8,9 @@
   <packaging>pom</packaging>
 
   <name>SoEBeS Maven Parent POM</name>
-  <description>This POM contains the default configuration for all projects which are located 
-    in com.soebes</description>
+  <description>This POM contains the default configuration for all projects which are located
+    in com.soebes
+  </description>
   <url>https://github.com/khmarbaise/${smpp.component}</url>
   <inceptionYear>2011</inceptionYear>
 
@@ -65,7 +66,7 @@
     <!--
       ! set the default arguments for maven-release-plugin
     -->
-    <arguments />
+    <arguments/>
     <maven.compiler.release>11</maven.compiler.release>
   </properties>
 
@@ -417,12 +418,12 @@
               ! Make mvn site:stage working correctly in combination with scm-publish.
             -->
             <content>${project.build.directory}/staging</content>
-              <!--
-               ! The directory where to put the SNAPSHOT of master.
-               ! which is deployed by GitHub action (site-publish.yml).
-               ! So we ignore  this directory simply.
-              -->
-              <ignorePathsToDelete>snapshot</ignorePathsToDelete>
+            <!--
+             ! The directory where to put the SNAPSHOT of master.
+             ! which is deployed by GitHub action (site-publish.yml).
+             ! So we ignore  this directory simply.
+            -->
+            <ignorePathsToDelete>snapshot</ignorePathsToDelete>
           </configuration>
           <executions>
             <execution>
@@ -531,11 +532,13 @@
                     <exclude>org.codehaus.plexus:plexus-component-api</exclude>
                   </excludes>
                   <message>The plexus-component-api conflicts with the plexus-container-default used by Maven. You probably added a
-                    dependency that is missing the exclusions.</message>
+                    dependency that is missing the exclusions.
+                  </message>
                 </bannedDependencies>
                 <requireNoRepositories>
                   <message>The rules for repo1.maven.org are that pom.xml files should not include repository definitions. If
-                    repository definitions are included, they must be limited to SNAPSHOT only repositories.</message>
+                    repository definitions are included, they must be limited to SNAPSHOT only repositories.
+                  </message>
                   <banRepositories>true</banRepositories>
                   <banPluginRepositories>true</banPluginRepositories>
                   <allowSnapshotRepositories>true</allowSnapshotRepositories>
@@ -592,6 +595,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>versions-maven-plugin</artifactId>
+        <version>2.18.0</version>
         <configuration>
           <generateBackupPoms>false</generateBackupPoms>
         </configuration>
@@ -600,6 +604,19 @@
             <id>default-cli</id>
             <configuration>
               <processDependencyManagementTransitive>false</processDependencyManagementTransitive>
+              <ruleSet>
+                <ignoreVersions>
+                  <ignoreVersion>
+                    <!-- can be either: 'exact' (default), 'regex' or 'range' -->
+                    <type>regex</type>
+                    <version>(.+-SNAPSHOT|.+-M\d+)</version>
+                  </ignoreVersion>
+                  <ignoreVersion>
+                    <type>regex</type>
+                    <version>.+-(alpha|beta).+</version>
+                  </ignoreVersion>
+                </ignoreVersions>
+              </ruleSet>
             </configuration>
           </execution>
           <execution>
