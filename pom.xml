@@ -318,6 +318,10 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
           <version>3.11.2</version>
+          <configuration>
+            <failOnError>false</failOnError>
+            <failOnWarnings>false</failOnWarnings>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -787,6 +791,17 @@
               <execution>
                 <goals>
                   <goal>jar-no-fork</goal>
+                </goals>
+              </execution>
+            </executions>
+          </plugin>
+          <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <executions>
+              <execution>
+                <goals>
+                  <goal>jar</goal>
                 </goals>
               </execution>
             </executions>
