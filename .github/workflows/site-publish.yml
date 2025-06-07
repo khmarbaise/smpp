@@ -43,7 +43,7 @@ jobs:
         shell: bash
         env:
           MAVEN_OPTS: --sun-misc-unsafe-memory-access=allow
-        run: mvn -V --no-transfer-progress --color clean verify site:site site:stage
+        run: mvn -V --no-transfer-progress --color always verify site:site site:stage
       - name: 'Deploy to gh-pages'
         uses: JamesIves/github-pages-deploy-action@v4
         with:
